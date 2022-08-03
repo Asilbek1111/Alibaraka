@@ -1,0 +1,171 @@
+.about{
+    display: flex;
+    padding: 0 15%;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+.a-left{
+   width: 50%;
+}
+
+.a-left h1{
+    font-style: normal;
+font-weight: 800;
+font-size: 56px;
+line-height: 54px;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 12px;
+
+}
+
+.a-left button{
+    color: #037B35;
+    border: 1px solid #037B35;
+    background-color: inherit;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-right: 10px;
+    transition: 0.3s;
+    
+}
+
+.a-left button:hover{
+    color: white;
+    background-color: #037B35;
+    transform: scale(1.1);
+}
+
+.a-left p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+color: #000000;
+margin-bottom: 6rem;
+}
+
+.a-right img{
+position: absolute;
+}
+
+.a-right{
+    position: relative;
+
+}
+
+.dal1{
+top:-6rem ;
+left:-30rem ;
+z-index: 2;
+}
+
+.dal2{
+top: -6rem;
+left:-17rem ;
+
+z-index: 1;
+}
+
+.traktor{
+top: 35%;
+left:-26rem ;
+z-index:3 ;
+}
+
+
+
+
+@media (max-width: 1279px){
+    .a-left{
+        width: 100%;
+        padding-left:5% ;
+        padding-right: 45%;
+    }
+.dal1{
+top:-6rem ;
+left:-20rem ;
+z-index: 2;
+width: 20rem;
+}
+
+.dal2{
+top: -6rem;
+left:-11rem ;
+z-index: 1;
+width: 20rem;
+}
+
+.traktor{
+top: 20%;
+left:-19rem ;
+z-index:3 ;
+}
+}
+
+
+@media (max-width:999px){
+    .about{
+        flex-direction: column;
+    }
+
+    .a-left{
+        width: 100%;
+        padding-left:10% ;
+        padding-right: 0%;
+
+    }
+
+    .dal1{
+        left: 1rem;
+    }
+    .dal2{
+        left: 9rem;
+    }
+    .traktor{
+        left: 4rem;
+        top: 3rem;
+    }
+    .a-right{
+        margin-top: 7rem;
+    }
+}
+
+@media (max-width:548px){
+    .about{
+        flex-direction: column;
+    }
+
+    .a-left{
+        width: 100%;
+        padding-left:10% ;
+        padding-right: 0%;
+
+    }
+
+    .dal1{
+        left: -3rem;
+        width: 70%;
+
+    }
+    .dal2{
+        left: 5rem;
+        width: 70%;
+
+    }
+    .traktor{
+        left: -1rem;
+        top: 1rem;
+        width: 70%;
+    }
+    .a-right{
+        margin-top: 7rem;
+    }
+    .a-left{
+        padding: 0;
+    }
+    .a-left h1{
+        font-size: 40px;
+    }
+}

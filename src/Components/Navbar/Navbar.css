@@ -1,0 +1,45 @@
+.nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: inherit; */
+    /* background-image: inherit; */
+    padding: 2rem;
+    color: white;
+    font-size: 19px;
+}
+.ham{
+    display: none;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li{
+    margin-right: 20px;
+}
+
+
+
+@media (max-width:1000px){
+    .nav{
+        width: 95%;
+    }
+}
+
+@media (max-width:758px){
+.nav .logo, .nav-list, .info{
+    display: none;
+}
+
+.ham{
+    display: flex;
+    width: 80px;
+    font-size: 40px;
+    color: white;
+}
+}

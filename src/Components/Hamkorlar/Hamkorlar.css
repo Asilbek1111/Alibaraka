@@ -1,0 +1,48 @@
+.hamkorlar{
+    margin-top: 20rem;
+    width: 100%;
+    height: 10.5rem;
+    background-image: url('../../Images/image40.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper{
+width: 90%;
+
+}
+
+.SwiperSlide{
+margin-left: 14rem;
+}
+
+.hhh{
+margin: auto;
+}
+
+.lll{
+    margin-left: 1rem;
+}
+
+.sss{
+    margin-left: 0rem;
+}
+
+@media (max-width: 1088px){
+    .lll{
+        margin-left: 0;
+    }
+
+    .sss{
+        margin-left: 0;
+    }
+    .SwiperSlide{
+margin-left: 4rem;
+}
+
+.hamkorlar img{
+    width: 90%;
+}
+}
+

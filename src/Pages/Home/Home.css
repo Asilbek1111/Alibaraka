@@ -1,0 +1,302 @@
+header {
+  background-image: url("../../Images/Traktor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-wrapper {
+  margin-top: 10rem;
+  padding-bottom: 8.9rem;
+  display: flex;
+}
+.home-wrapper .left {
+  flex: 1;
+}
+.home-wrapper .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-wrapper .left h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 67.3724px;
+  line-height: 83px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.home-wrapper .left p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 3rem;
+}
+
+.home-wrapper .left button {
+  width: 156px;
+  height: 53px;
+  background: #fcbd17;
+  border-radius: 26.5px;
+  color: white;
+  border: none;
+  /* margin-bottom: 13.9rem; */
+}
+
+.home-wrapper .left {
+  padding: 10px 5rem 10px 5rem;
+}
+
+.home-wrapper .right .circle {
+  width: 150px;
+  height: 150px;
+  background: rgba(254, 211, 114, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-wrapper .right {
+  position: relative;
+}
+
+.home-wrapper .right .vector1 {
+  position: absolute;
+  top: -50%;
+  left: 0;
+}
+
+.home-wrapper .right .vector2 {
+  position: absolute;
+  top: -43%;
+  left: 23%;
+}
+
+.p1 {
+  width: 100%;
+}
+
+.production {
+  display: flex;
+  margin: auto;
+  margin-top: 8rem;
+  /* width: 70%; */
+  padding: 0 15%;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.p-heading {
+  width: 60%;
+  margin-bottom: 5rem;
+}
+
+.p-heading h1 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.p-heading p {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.archa {
+  position: absolute;
+  top: -40%;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 1540px) {
+  .home-wrapper .right .vector1 {
+    width: 100%;
+    position: absolute;
+    top: -50%;
+    left: 0;
+  }
+
+  .home-wrapper .right .vector2 {
+    position: absolute;
+    top: -33%;
+    left: 33%;
+    width: 50%;
+  }
+  .home-wrapper .right .circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -2%;
+    left: 46%;
+  }
+}
+
+@media (max-width: 1389px) {
+  .home-wrapper .right .vector1 {
+    width: 100%;
+    position: absolute;
+    top: 1%;
+    /* bottom: 0; */
+    left: 0;
+  }
+
+  .production {
+    margin-top: 15rem;
+  }
+
+  .p-heading h1 {
+    font-size: 50px;
+  }
+
+  .home-wrapper .right .vector2 {
+    position: absolute;
+    top: 9%;
+    /* left: 43%;
+  width: 30%; */
+  }
+  .home-wrapper .right .circle {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 24%;
+    left: 45.5%;
+  }
+
+  .production {
+    padding-left: 10%;
+    padding-right: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1168px) {
+  .production {
+    padding-left: 10%;
+    padding-right: 0;
+    margin: auto;
+  }
+  .home-wrapper .right .vector1 {
+    width: 100%;
+    position: absolute;
+    top: 1%;
+    /* bottom: 0; */
+    left: 0;
+  }
+
+  .home-wrapper .right .vector2 {
+    position: absolute;
+    top: 9%;
+    /* left: 43%;
+  width: 30%; */
+  }
+  .home-wrapper .right .circle {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: 24%;
+    left: 45.5%;
+  }
+  .circle img {
+    width: 70%;
+  }
+  .p-heading {
+    width: 90%;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-wrapper .right .vector1 {
+    width: 100%;
+    position: absolute;
+    top: 1%;
+    /* bottom: 0; */
+    left: 0;
+  }
+
+  .home-wrapper .right .vector2 {
+    position: absolute;
+    top: 9%;
+    /* left: 43%;
+  width: 30%; */
+  }
+  .home-wrapper .right .circle {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: 19%;
+    left: 43.5%;
+  }
+  .circle img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 907px) {
+  .home-wrapper .right .vector1 {
+    width: 100%;
+    position: absolute;
+    top: 1%;
+    /* bottom: 0; */
+    left: 0;
+  }
+
+  .home-wrapper .right .vector2 {
+    position: absolute;
+    top: 9%;
+    /* left: 43%;
+  width: 30%; */
+  }
+  .home-wrapper .right .circle {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 19%;
+    left: 43.5%;
+  }
+  .circle img {
+    width: 70%;
+  }
+  .archa {
+    width: 27%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-wrapper .right {
+    display: none;
+  }
+}
+
+@media (max-width: 863px) {
+  .production {
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 449px) {
+  .home-wrapper .left h1 {
+    font-size: 50px;
+    margin-top: 0;
+  }
+  .home-wrapper {
+    margin-top: 7rem;
+    padding-bottom: 8.9rem;
+    display: flex;
+  }
+  .p-heading h1 {
+    font-size: 35px;
+    margin-bottom: 1rem;
+  }
+  .production {
+    margin-top: 4rem;
+  }
+}
