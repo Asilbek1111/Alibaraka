@@ -7,7 +7,7 @@ import LightSpeed from "react-reveal/LightSpeed";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="a-left">
         <h1>LITTLE ABOUT OUR COMPANY</h1>
         <p>

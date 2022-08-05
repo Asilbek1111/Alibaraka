@@ -5,19 +5,17 @@ import Uchburchak from "../../Images/3bur.png";
 import Vector1 from "../../Images/Vector1.png";
 import Vector2 from "../../Images/Vector2.png";
 import P2 from "../../Images/1p.PNG";
-import Img1 from "../../Images/img1.png";
-import Img2 from "../../Images/img2.png";
-import Img3 from "../../Images/img3.png";
-import Img4 from "../../Images/img4.png";
-import Img5 from "../../Images/img5.png";
-import Img6 from "../../Images/IMAGE.png";
 import Archa from "../../Images/archa.png";
 import Fade from "react-reveal/Fade";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion/dist/es/index";
 import Product from "../../Components/Product/Product";
-import About from "../About/About";
+import About from "../../Components/About/About";
 import Hamkorlar from "../../Components/Hamkorlar/Hamkorlar";
-import Trust from "../Trust/Trust";
+import Trust from "../../Components/Trust/Trust";
+import Stories from "../../Components/Stories/Stories";
+import Contact from "../../Components/Contact/Contact";
+import Footer from "../../Components/Footer/Footer";
+import AfterFooter from "../../Components/AfterFooter/AfterFooter";
 
 const Home = () => {
   return (
@@ -37,13 +35,13 @@ const Home = () => {
           <div className="right">
             <img className="vector1" src={Vector1} alt="" />
             <motion.img
-              initial={{ rotate: 360 }}
-              whileInView={{ rotate: 0 }}
-              // viewport={{ margin: "-40px" }}
-              transition={{ repeat: Infinity, duration: 8, type: "spring" }}
+              animate={{ rotate: 360 }}
+              transition={{
+                repeat: Infinity,
+                duration: 5,
+              }}
               className="vector2"
               src={Vector2}
-              alt=""
             />
 
             <div className="circle">
@@ -53,9 +51,7 @@ const Home = () => {
         </div>
       </header>
       <img className="p1" src={P2} alt="" />
-      {/* <img className="p1" src={P2} alt="" /> */}
-      {/* <img className="p2" src={P2} alt="" /> */}
-      <div className="production">
+      <div className="production" id="products">
         <div className="p-heading">
           <h1>Our production</h1>
           <p>
@@ -66,42 +62,16 @@ const Home = () => {
         <Fade top>
           <img className="archa" src={Archa} alt="" />
         </Fade>
-        <Product
-          img={Img1}
-          bText="Asosiy Plyonka 
-                  Turlari"
-          text="Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint."
-        />
-        <Product
-          img={Img2}
-          bText="Asosiy Zajim turlari"
-          text="Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint."
-        />
-        <Product
-          img={Img6}
-          bText="Tomchilab sug'orish tizimi"
-          text="Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint."
-        />
-        <Product
-          img={Img3}
-          bText="Issiqxonaning sovutish tizimi"
-          text="Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint."
-        />
-        <Product
-          img={Img5}
-          bText="Issiqxonaning isitish tizimi"
-          text="Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint."
-        />
-        <Product
-          img={Img4}
-          bText="Qo'shimcha aksessuarlar"
-          text="Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint."
-        />
+        <Product />
       </div>
 
       <About />
       <Hamkorlar />
       <Trust />
+      <Stories />
+      <Contact />
+      <Footer />
+      <AfterFooter />
     </div>
   );
 };

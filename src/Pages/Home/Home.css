@@ -5,6 +5,10 @@ header {
   background-size: cover;
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 .home-wrapper {
   margin-top: 10rem;
   padding-bottom: 8.9rem;
@@ -35,6 +39,7 @@ header {
   line-height: 30px;
   color: rgba(255, 255, 255, 0.55);
   margin-bottom: 3rem;
+  padding-right: 12rem;
 }
 
 .home-wrapper .left button {
@@ -90,6 +95,13 @@ header {
   flex-wrap: wrap;
   position: relative;
 }
+
+.production a{
+  text-decoration: none;
+  color: black;
+}
+
+
 
 .p-heading {
   width: 60%;
@@ -175,6 +187,9 @@ header {
 }
 
 @media (max-width: 1168px) {
+  .home-wrapper .left p{
+    padding-right: 0;
+  }
   .production {
     padding-left: 10%;
     padding-right: 0;
@@ -283,6 +298,10 @@ header {
 }
 
 @media (max-width: 449px) {
+
+  .home-wrapper .left{
+    padding: 0 5px;
+  }
   .home-wrapper .left h1 {
     font-size: 50px;
     margin-top: 0;

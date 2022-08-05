@@ -9,8 +9,13 @@
     padding: 2rem;
     color: white;
     font-size: 19px;
+    position: relative;
 }
 .ham{
+    display: none;
+}
+
+#checkbox{
     display: none;
 }
 
@@ -20,9 +25,45 @@
 }
 
 .nav-list li{
-    margin-right: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+    background-color: inherit;
+}
+.nav-list li a{
+    background-color: inherit;
+    color: #3b881a;
 }
 
+.nav-list li a:hover{
+    opacity: 0.5;
+}
+
+.menu{
+    border: 2px solid gray;
+    transition: 0.4s;
+    list-style-type: none;
+    /* background-color: #3b881a; */
+    /* width: 100%; */
+    height: 12rem;
+    position: absolute;
+    left:50px;
+    top: 0px;
+    right: -3%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* gap: 12px; */
+    margin: 0;
+    /* padding-top: 2rem; */
+    display: none;
+    background-color: #51f60b;
+    font-family: cursive;
+}
+
+
+.menu li{
+    padding: 10px;
+}
 
 
 @media (max-width:1000px){
@@ -32,8 +73,19 @@
 }
 
 @media (max-width:758px){
-.nav .logo, .nav-list, .info{
+ .nav-list, .info{
     display: none;
+}
+.logo{
+    margin: 1rem;
+}
+
+input[type='checkbox']:checked ~ .menu{
+    display: block;
+}
+
+.nav{
+    padding: 0rem;
 }
 
 .ham{
@@ -42,4 +94,5 @@
     font-size: 40px;
     color: white;
 }
+
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Trust.css";
 import Flag from "../../Images/flag.png";
-import SimpleAccordion from "../../Components/Accordion/Accordion";
+import SimpleAccordion from "../Accordion/Accordion";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
 

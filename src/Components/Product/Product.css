@@ -4,23 +4,47 @@
   border: 0.8325px solid #d9dcec;
   border-radius: 8.325px;
   width: 500px;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
+  /* margin-bottom: 1rem;
+  margin-right: 1rem; */
   padding: 10px;
+
+
+  height: 200px;
+    margin: 25px 5px;
+    /* width: 49%; */
 }
 
 .card img{
+  background-size: cover;
+  width: 80%;
     border-radius: 12px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .card h2{
     padding-bottom: 2rem;
 }
 .card-left{
+  flex: 1;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+.card-right{
+  flex: 1;
+}
+
+
+
+.card-right p{
+  max-height: 40px;
+  width: 200px;
+  text-overflow: ellipsis;
+  font-family: cursive;
+  line-height: 20px;
+  overflow:hidden ;
 }
 
 @media (max-width: 1389px){
