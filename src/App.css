@@ -1,6 +1,38 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.buy {
+  padding: 12px 40px;
+  border: 1px green solid;
+  background-color: green;
+  color: white;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-right: 1.5rem;
+  transition: 0.3s;
+}
+
+.cart {
+  padding: 12px 40px;
+  border: 1px green solid;
+  color: green;
+  border-radius: 25px;
+  background-color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.buy:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.cart:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.1);
+}

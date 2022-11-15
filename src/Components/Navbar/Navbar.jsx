@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import "./Navbar.css";
 import Frame from "../../Images/Frame.png";
 import Telefon from "../../Images/Telefon.png";
 import { Link } from "react-scroll";
+import { LangContext } from "../../Context/Lang";
 
 const Navbar = () => {
+  const {lang , setLang} = useContext(LangContext)
+  useEffect(() => {
+   console.log(lang)
+  }, [lang]);
   return (
     <div className="nav" id="nav">
       <input type="checkbox" id="checkbox" />
@@ -13,7 +18,7 @@ const Navbar = () => {
       </label>
       <ul className="menu">
         <li>
-          <Link to="nav" spy={true} smooth={true} offset={50} duration={500}>
+          <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
             Home
           </Link>
         </li>
@@ -64,6 +69,13 @@ const Navbar = () => {
         </li>
         <li>
           <Link>Contact</Link>
+        </li>
+        <li>
+          <select onChange={(e)=> setLang(e.target.value)}>
+            <option value="uz">Uz</option>
+            <option value="en">En</option>
+            <option value="ru">Ru</option>
+          </select>
         </li>
       </ul>
 

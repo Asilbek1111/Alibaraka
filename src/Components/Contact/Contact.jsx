@@ -6,6 +6,37 @@ import Contact2 from "../../Images/contact2.png";
 import { Fade } from "react-reveal";
 
 const Contact = () => {
+  const formBtn = (e) => {
+    e.preventDefault();
+    if (
+      e.target[0].value.length > 0 &&
+      e.target[1].value.length > 0 &&
+      e.target[2].value.length > 0
+    ) {
+      let botMessege = `
+Salom Asilbek, Yangi Xabar!😊%0A
+Ismi 👤: ${e.target[0].value}%0A
+Raqam ☎: ${e.target[1].value}%0A 
+Xabar ☎: ${e.target[2].value}%0A              
+                `;
+      //  console.log(botMessege)
+
+      let url = `https://api.telegram.org/bot5539239116:AAEcoa289s8Pwq-bT_5efs2003IjnjYkZpQ/sendMessage?chat_id=1328407566&text=${botMessege}`;
+      async function fetchAsync(url) {
+        let response = await fetch(url);
+        let data = await response.json();
+        return data;
+      }
+      fetchAsync(url);
+      e.target[0].value = "";
+
+      e.target[1].value = "";
+
+      e.target[2].value = "";
+    } else {
+      return -1;
+    }
+  };
   return (
     <div className="contact">
       <Fade left>
@@ -21,7 +52,7 @@ const Contact = () => {
               Your work is going to fill a large part of your life, and the only
               way to be truly satisfied.
             </p>
-            <form>
+            <form onSubmit={formBtn}>
               <div className="texts">
                 <input type="text" placeholder="Enter your name" />
                 <input type="text" placeholder="Enter phone num" />
@@ -34,7 +65,9 @@ const Contact = () => {
                 placeholder="Enter your subject"
               ></textarea>
 
-              <button className="c-btn">Send Message</button>
+              <button className="c-btn" type="submit">
+                Send Message
+              </button>
             </form>
           </div>
         </div>

@@ -14,6 +14,12 @@
     /* width: 49%; */
 }
 
+#product{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
 .card img{
   background-size: cover;
   width: 80%;
